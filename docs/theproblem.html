@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div.play {
+            width: 100px;
+            height: 100px;
+            border: 2px dashed violet;
+            display: inline-block;
+        }
+
+        .center {
+            width: 70%;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #d1 {
+            background: yellow;
+        }
+
+        #d2 {
+            background: green;
+        }
+
+        #d3 {
+            background: grey;
+        }
+
+        #d4 {
+            background: blue;
+        }
+
+
+        .p2 div {
+            margin: 2.5% 15%;
+        }
+
+        span.play {
+            border: 2px dashed violet;
+        }
+
+        .container {
+            display: flex;
+            /* align-content: space-between; */
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            margin: 5% 15%;
+            width: 100px;
+            height: 100px;
+            border: 2px dashed violet;
+
+        }
+    </style>
+    <title>WhyUseFlexbox</title>
+</head>
+
+<body>
+    <div class="center">
+        <span class="play" id="d1">1</span>
+        <span class="play" id="d2">2</span>
+        <span class="play" id="d3">3</span>
+        <span class="play" id="d4">4</span>
+    </div>
+    <div id="p1" div class="center">
+        <div class="play" id="d1">1</div>
+        <div class="play" id="d2">2</div>
+        <div class="play" id="d3">3</div>
+        <div class="play" id="d4">4</div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <div class="p2">
+        <div class="center">
+            <div class="play" id="d1">1</div>
+            <div class="play" id="d2">2</div>
+        </div>
+        <div class="center">
+            <div class="play" id="d3">3</div>
+            <div class="play" id="d4">4</div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <div class="center">
+        <div class="container">
+
+            <div class="item" id="d1">1</div>
+            <div class="item" id="d2">2</div>
+            <div class="item" id="d3">3</div>
+            <div class="item" id="d4">4</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
